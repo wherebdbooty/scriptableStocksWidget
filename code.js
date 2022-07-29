@@ -7,6 +7,7 @@ let _isPhone = false
 let FM=FileManager.iCloud()
 
 //change the widget display info. can be: "price", "change", or "chart"
+//iphone can only show "price" unless the yahoo site is loaded as desktop version (like ipad)
 let _showing = "price"
 
 //actual stock symbols go in this list
