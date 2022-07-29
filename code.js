@@ -4,6 +4,7 @@ let _debug = false
 let FM=FileManager.iCloud()
 
 //change the widget display info. can be: "price", "change", or "chart"
+//phones can only display "price"
 let _showing = "price"
 
 //actual stock symbols go in this list
