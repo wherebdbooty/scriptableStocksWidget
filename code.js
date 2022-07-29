@@ -128,9 +128,9 @@ if(stocks){
 	
 	let stockArea			= body.addStack()
 		stockArea.spacing	= CHS
-		stockArea.size = new Size(WW,0)
+		stockArea.size		= new Size(WW,0)
 
-	let column				= []
+	let column			= []
 
 	for(let i = 0; i < stocks.length; i++){
 		if(!column[Math.floor(i/GH)]){
@@ -205,19 +205,12 @@ if(stocks){
 			borderWidth = 1
 			centerAlignContent()
 			backgroundColor = Color.dynamic(Color.white(), Color.black())
-  
-			/*if(_isPhone){
-				with(addText(_textObj[_textObj[_showing].alt].text+"%")){
-					minimumScaleFactor = 0.06
-					font = Font.regularRoundedSystemFont(CW*2)
-				}
-			}
-			else{*/
-				with(addText(_textObj[_textObj[_showing].alt].text+(Device.isPhone()?"%":""))){
-					minimumScaleFactor = 0.06
-					font = Font.regularRoundedSystemFont(CW*2)
-				}  
-			//}
+			
+			with(addText(_textObj[_textObj[_showing].alt].text+(Device.isPhone()?"%":""))){
+				minimumScaleFactor = 0.06
+				font = Font.regularRoundedSystemFont(CW*2)
+			}  
+			
 		}
 	}
 
