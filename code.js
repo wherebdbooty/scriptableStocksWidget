@@ -1,3 +1,5 @@
+//this version uses "Device.isPhone()" to adjust the code for different website layouts of iPhones vs. iPads
+
 //set to true to show the widget (no auto-close)
 let _debug = false
 
